@@ -12,10 +12,9 @@ app.get('/', (req, res) => {
 app.post('/result', (req, res) => {
   let name = req.body.name;
   let age = req.body.age;
-  console.log(name);
   res.send(`Welcome ${name}, ${age} years old`);
-})
+});
 
 app.listen(3000, () => { 
     console.log('Server is running at port 3000');
-})
+});
